@@ -18,9 +18,9 @@ colors.setTheme({
 });
 
 program.version(pkg.version)
-	.option('-P, --port <n>', 'port the server use, default 3000', parseInt)
-	.option('-D, --deep <n>', 'max showed deep of files, default 3', parseInt)
-	.option('-S, --slient', 'should or not to run without log, default false', parseInt)
+	.option('-p, --port <n>', 'port the server use, default 3000', parseInt)
+	.option('-d, --deep <n>', 'max showed deep of files, default 3', parseInt)
+	.option('-s, --slient', 'should or not to run without log, default false', parseInt)
 	.parse(process.argv);
 
 require('../lib/startup.js').exec({
