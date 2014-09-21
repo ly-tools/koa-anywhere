@@ -1,0 +1,44 @@
+{
+  "name": "koa-anywhere",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">= 0.11.13"
+  },
+  "bin": {
+    "ka": "./bin/ka"
+  },
+  "description": "koa-anywhere==>通过一条命令，将当前目录变成一个静态文件服务器",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/LingyuCoder/koa-anywhere.git"
+  },
+  "author": "skyinlayer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LingyuCoder/koa-anywhere/issues"
+  },
+  "homepage": "https://github.com/LingyuCoder/koa-anywhere",
+  "dependencies": {
+    "colors": "^0.6.2",
+    "commander": "^2.3.0",
+    "jade": "^1.7.0",
+    "koa": "^0.12.0",
+    "koa-static": "^1.4.7",
+    "optimist": "^0.6.1",
+    "underscore": "^1.7.0"
+  },
+  "_shasum": "91e5bbaeadca2b1745b3aa596d1ad2c211ebfb27",
+  "_from": "./",
+  "main": "index.js",
+  "devDependencies": {},
+  "keywords": [
+    "koa",
+    "file",
+    "static",
+    "server",
+    "anywhere"
+  ]
+}
