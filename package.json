@@ -40,5 +40,6 @@
     "static",
     "server",
     "anywhere"
-  ]
+  ],
+  "readmeFilename": "README.md"
 }
