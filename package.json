@@ -1,6 +1,6 @@
 {
   "name": "koa-anywhere",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "engines": {
     "node": ">= 0.11.13"
   },
@@ -28,6 +28,7 @@
     "commander": "^2.3.0",
     "jade": "^1.7.0",
     "koa": "^0.12.0",
+    "koa-demo": "0.0.4",
     "koa-static": "^1.4.7",
     "optimist": "^0.6.1",
     "underscore": "^1.7.0"
@@ -45,6 +46,6 @@
   ],
   "readmeFilename": "README.md",
   "readme": "koa-anywhere\r\n============\r\n通过一条命令，将当前目录变成一个静态文件服务器\r\n\r\n需要Node版本：>= 0.11.13\r\n\r\n\r\n#Install\r\n```\r\n$ npm install -g koa-anywhere\r\n```\r\n\r\n#Usage\r\n只需一条简单的命令`ka`就可以启动一个静态文件服务器\r\n```\r\n$ cd <想要共享的目录>\r\n$ ka\r\n```\r\n\r\n##Option\r\n###port\r\n通过`-P <端口号>`或者`--port <端口号>`来指定静态文件服务器的端口\r\n\r\n默认端口为`3000`\r\n\r\n###deep\r\n通过`-D <层级数>`或者`--deep <层级数>`来确定静态文件需要显示的文件层级，超过层级的文件不显示\r\n\r\n默认层级数为`3`\r\n\r\n###slient\r\n通过`-S`或者`--slient`来决定是否显示日志\r\n\r\n默认为`false`，也就是显示日志\r\n",
-  "_id": "koa-anywhere@0.0.1",
-  "_resolved": "https://registry.npmjs.org/koa-anywhere/-/koa-anywhere-0.0.1.tgz"
+  "_id": "koa-anywhere@0.0.4",
+  "_resolved": "https://registry.npmjs.org/koa-anywhere/-/koa-anywhere-0.0.4.tgz"
 }

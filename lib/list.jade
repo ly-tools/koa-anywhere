@@ -20,11 +20,27 @@ html(lang="en")
         .tree li:last-child:after{height: 2.3em; }
       .tree span {position: relative; z-index: 1; padding: .2em .5em .2em 1em; border-radius: .5em; background-color: #16a085; color: white; cursor: pointer; }
         .tree span i{margin-left: .5em; }
+      .cur {margin: 0 0 0 40px;color: #16a085;}
+      .breads {display: inline-block;}
+        .breads li {list-style: none;display: inline-block;color: #16a085;}
+          .breads li a {color: #16a085;text-decoration: none}
+            .breads li a:hover {font-weight: bolder}
+          .breads .bread:before {content:'/';}
   body
+    
     div.wrapper
+      ul.breads
+        li 目录：
+        each value, index in breads
+          li
+            a.bread(href=value.path)
+              =value.name
+      div.cur
+        = '当前路径：' + realPath
       div.tree
         ul
           !=html
+      
 
     script(type='text/javascript', src='http://cdn.staticfile.org/jquery/2.1.1-rc2/jquery.js')
     script(type='text/javascript').
