@@ -1,15 +1,17 @@
 {
   "name": "koa-anywhere",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "engines": {
-    "node": ">= 0.11.13"
+    "node": ">= 4.0.0"
   },
   "bin": {
-    "ka": "./bin/ka"
+    "ka": "./bin/ka.js"
   },
   "description": "koa-anywhere==>通过一条命令，将当前目录变成一个静态文件服务器",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "NODE_ENV=test ./node_modules/.bin/_mocha --require should --reporter spec",
+    "test-cov": "NODE_ENV=test node ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --require should",
+    "test-travis": "NODE_ENV=test node ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --report lcovonly -- --require should"
   },
   "repository": {
     "type": "git",
@@ -24,28 +26,28 @@
   },
   "homepage": "https://github.com/LingyuCoder/koa-anywhere",
   "dependencies": {
-    "colors": "^0.6.2",
-    "commander": "^2.3.0",
-    "jade": "^1.7.0",
-    "koa": "^0.12.0",
-    "koa-demo": "0.0.4",
-    "koa-static": "^1.4.7",
-    "optimist": "^0.6.1",
-    "underscore": "^1.7.0"
+    "colors": "~1.1.2",
+    "commander": "~2.9.0",
+    "debug": "~2.2.0",
+    "jade": "~1.11.0",
+    "koa": "~1.1.2",
+    "koa-static": "~1.5.2",
+    "lodash": "~3.10.1",
+    "open": "0.0.5",
+    "optimist": "~0.6.1"
   },
-  "_shasum": "91e5bbaeadca2b1745b3aa596d1ad2c211ebfb27",
-  "_from": "koa-anywhere@",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "~1.9.0",
+    "istanbul": "~0.4.0",
+    "mocha": "~2.3.3",
+    "should": "~7.1.1"
+  },
   "keywords": [
     "koa",
     "file",
     "static",
     "server",
     "anywhere"
-  ],
-  "readmeFilename": "README.md",
-  "readme": "koa-anywhere\r\n============\r\n通过一条命令，将当前目录变成一个静态文件服务器\r\n\r\n需要Node版本：>= 0.11.13\r\n\r\n\r\n#Install\r\n```\r\n$ npm install -g koa-anywhere\r\n```\r\n\r\n#Usage\r\n只需一条简单的命令`ka`就可以启动一个静态文件服务器\r\n```\r\n$ cd <想要共享的目录>\r\n$ ka\r\n```\r\n\r\n##Option\r\n###port\r\n通过`-P <端口号>`或者`--port <端口号>`来指定静态文件服务器的端口\r\n\r\n默认端口为`3000`\r\n\r\n###deep\r\n通过`-D <层级数>`或者`--deep <层级数>`来确定静态文件需要显示的文件层级，超过层级的文件不显示\r\n\r\n默认层级数为`3`\r\n\r\n###slient\r\n通过`-S`或者`--slient`来决定是否显示日志\r\n\r\n默认为`false`，也就是显示日志\r\n",
-  "_id": "koa-anywhere@0.0.4",
-  "_resolved": "https://registry.npmjs.org/koa-anywhere/-/koa-anywhere-0.0.4.tgz"
+  ]
 }
