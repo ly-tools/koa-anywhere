@@ -1,6 +1,5 @@
 # koa-anywhere
 
-[![Test coverage](https://img.shields.io/coveralls/LingyuCoder/koa-anywhere.svg?style=flat-square)](https://coveralls.io/r/LingyuCoder/koa-anywhere?branch=master)
 [![Build Status](https://travis-ci.org/LingyuCoder/koa-anywhere.png)](https://travis-ci.org/LingyuCoder/koa-anywhere)
 [![Dependency Status](https://david-dm.org/LingyuCoder/koa-anywhere.svg)](https://david-dm.org/LingyuCoder/koa-anywhere)
 [![devDependency Status](https://david-dm.org/LingyuCoder/koa-anywhere/dev-status.svg)](https://david-dm.org/LingyuCoder/koa-anywhere#info=devDependencies)
