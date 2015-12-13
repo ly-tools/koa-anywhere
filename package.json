@@ -7,7 +7,7 @@
   "bin": {
     "ka": "./bin/ka.js"
   },
-  "description": "通过一条命令，将当前目录变成一个静态文件服务器",
+  "description": "Startup a static file server in current directory",
   "scripts": {
     "test": "NODE_ENV=test ./node_modules/.bin/_mocha --require should --reporter spec",
     "test-cov": "NODE_ENV=test node ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --require should",
@@ -31,6 +31,7 @@
     "jade": "~1.11.0",
     "koa": "~0.12.0",
     "koa-static": "~1.5.2",
+    "linglog": "0.0.4",
     "lodash": "~3.10.1",
     "open": "0.0.5",
     "optimist": "~0.6.1",
@@ -50,12 +51,5 @@
     "static",
     "server",
     "anywhere"
-  ],
-  "readme": "koa-anywhere\n============\n通过一条命令，将当前目录变成一个静态文件服务器\n\n需要Node版本：>= 4.0.0\n\n\n#Install\n```\n$ npm install -g koa-anywhere\n```\n\n#Usage\n只需一条简单的命令`ka`就可以启动一个静态文件服务器\n```\n$ cd <想要共享的目录>\n$ ka\n```\n\n##Option\n###port\n通过`-p <端口号>`或者`--port <端口号>`来指定静态文件服务器的端口\n\n默认端口为`3000`\n\n###deep\n通过`-d <层级数>`或者`--deep <层级数>`来确定静态文件需要显示的文件层级，超过层级的文件不显示\n\n默认层级数为`3`\n\n###silent\n通过`-s`或者`--silent`来决定是否显示日志\n\n默认为`false`，也就是显示日志\n",
-  "readmeFilename": "README.md",
-  "gitHead": "47748905666fe530edf2103da2d17e2aaa0122b7",
-  "_id": "koa-anywhere@0.1.0",
-  "_shasum": "41319ac2b9b8568b998cbcd5ec119d0d3283145f",
-  "_from": "../../../../../github/koa-anywhere",
-  "_resolved": "file:../../../../../github/koa-anywhere"
+  ]
 }

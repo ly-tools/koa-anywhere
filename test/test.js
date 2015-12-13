@@ -7,7 +7,7 @@ const request = require('request');
 const fs = require('fs');
 const CWD = process.cwd();
 
-let ps = fork(path.join(CWD, 'bin', 'ka.js'), ['-p', '8848'], {
+let ps = fork(path.join(CWD, 'bin', 'ka.js'), ['-p', '8848', '-s'], {
   env: process.env,
   cwd: path.join(CWD, 'test', 'src'),
   stdio: [
